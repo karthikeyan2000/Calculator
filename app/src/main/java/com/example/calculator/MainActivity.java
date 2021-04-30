@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText = (EditText) findViewById(R.id.editText);
+        editText = findViewById(R.id.editText);
     }
 
     public void onClick0(View view) {
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setText("");
         mValueOne = 0;
         mValueTwo = 0;
+        dot = false;
     }
 
     public void onClickNext(View view) {
